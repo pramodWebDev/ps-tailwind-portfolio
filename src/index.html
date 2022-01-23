@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+    .span-light{
+        font-weight: 100;
+        font-size: small;
+    }
+  </style>
+</head>
+<body>
+    <div class="relative min-h-screen md:flex">
+
+        <!-- mobile menu bar -->
+        <div class="bg-slate-50 text-blue-700  flex justify-between md:hidden">
+          <!-- logo -->
+          <a href="#" class="px-4 py-2 text-blue-700  font-bold">Pramod  Sahu <br> <span class="font-light span-light"> Full Stack Developer </span> </a>
+      
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700 ">
+            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+
+        </div>
+      
+        <!-- Desktop -->
+        <!-- sidebar  -->
+        <div class="sidebar bg-slate-50 w-64 space-y-6 py-0 px-2 md:py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+        <!-- <div class="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 md:py-0 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"> -->
+      
+          <!-- logo -->
+          <span class="hidden  md:block">
+
+    
+          <a href="#" class="text-blue-700 flex items-center space-x-1 px-1 ">
+            
+            <span class="text-4xl font-thin">Pramod Sahu</span>
+           
+          </a><span class="px-2 text-gray-600"> Full Stack Developer </span>
+          <div class="mt-6">
+            <hr class=" border-zinc-500" >
+          </div>
+
+        </span>
+          <!-- nav -->
+          <nav class="">
+            <a href="#" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white  hover:ml-1 ">
+                <i class="fa fa-user"></i> &nbsp; &nbsp; About
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;  Experience
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;Projects
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;Skills
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;Education
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;Contact
+            </a>
+            <a href="" class="block text-gray-600 py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white hover:ml-1">
+                <i class="fa fa-user"></i> &nbsp; &nbsp;Resume
+            </a>
+      
+          </nav>
+        </div>
+      
+        <!-- content -->
+        <div class=" p-10 text-2xl font-bold">
+            <!-- <img class="" src="../assets/bg_banner.jpg" alt="bg_banner"> -->
+          content goes herecontent goes herecontent goes herecontent goes here
+        </div>
+        <div class="bg-blue-500">
+
+            <h1> hit hfs </h1>
+        </div>
+      
+      </div>
+      <script>
+
+        const btn = document.querySelector(".mobile-menu-button");
+        const sidebar = document.querySelector(".sidebar");
+
+        btn.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+        });
+
+
+      </script>
+
+</body>
+</html>
